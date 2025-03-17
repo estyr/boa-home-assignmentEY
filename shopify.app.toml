@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e80d26865903568fc141ffed281be285"
+application_url = "https://further-frequent-tell-presence.trycloudflare.com"
+embedded = true
+name = "boa-home-task-{EY}"
+handle = "boa-home-task-ey"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+dev_store_url = "home-assignment-276.myshopify.com"
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://further-frequent-tell-presence.trycloudflare.com/auth/callback",
+  "https://further-frequent-tell-presence.trycloudflare.com/auth/shopify/callback",
+  "https://further-frequent-tell-presence.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
